@@ -9,7 +9,7 @@
 
 ## Attributes & Methods 
 |keyword|type|description|
-|---|---|
+|---|---| --- |
 |initCVSS|attr| This is a json object that you can use to initialize your calculator. |
 |Env|attr|This keyword controls whether environmental factors are added.|
 |isDisabled|attr|Sometimes you don't want the user to do it.|
