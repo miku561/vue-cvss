@@ -18,10 +18,10 @@
 ## Example
 ```
     <div>
-        <Cvss :initCVSS="obj" :isDisabled="true" :Env="true" @getCvss="showResult">
+        <CVSS :initCVSS="obj" :isDisabled="true" :Env="true" @getCvss="showResult"></CVSS>
     </div>
     <script>
-        import Cvss from 'vue-cvss'
+        import CVSS from 'vue-cvss'
         data () {
             return {
                 obj: {
@@ -38,7 +38,7 @@
         },
         methods: {
             showResult (cvssObj, score, rating) {
-                console.log(cvssObj, score, rating)
+                console.log(cvssObj, score, rating);
             }
         }
     </script>
