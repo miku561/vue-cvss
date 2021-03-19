@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "checkJs": false,
+    "paths": {
+      "@/*": [
+        "./examples/*"
+      ],
+      "{你的项目名称}/packages/*": [
+        "./packages/*"
+      ],
+      "{你的项目名称}/lib/*": [
+        "./lib/*"
+      ],
+      "types/*": [
+        "types/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "lib",
+    "docs",
+    ".github",
+    "public"
+  ]
+}
