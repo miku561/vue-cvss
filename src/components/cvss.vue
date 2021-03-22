@@ -53,6 +53,7 @@
 import cvss from './cvss-source/cvss.js'
 import { cvssData, baseData, environmentData } from './config.js'
 export default {
+  name: 'vue-cvss',
   props: {
     initCVSS: {
       type: Object,
@@ -181,7 +182,7 @@ export default {
   color: #ffffff;
   font-size: 22px;
   line-height: 26px;
-  font-weight: normal;
+  font-weight: 500;
 }
 .cvss-wrap .score-container .ManufacturerSeverity{
   display: block;
@@ -227,7 +228,7 @@ export default {
   -moz-user-select: -moz-none;
   -ms-user-select: none;
   user-select: none;
-  font-weight: normal;
+  font-weight: 500;
   font-family: '微软雅黑';
   text-align: left;
   transition: all .3s;
@@ -246,7 +247,7 @@ export default {
 .cvss-wrap .calculation-container .item-radio:checked + .item-label{
   border: 1px solid #1c639f;
   color: #fff;
-  font-weight: normal;
+  font-weight: 500;
   transition: all .3s;
   background: #1c639f;
 }

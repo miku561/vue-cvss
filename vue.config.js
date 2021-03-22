@@ -6,13 +6,11 @@ function resolve(dir) {
 module.exports = {
   chainWebpack: config => {
     config.resolve.alias
-      .set("@", resolve("examples"))
-      .set("{vue-cvss}/packages", resolve("packages"))
-      .set("{vue-cvss}/lib", resolve("lib"));
+      .set("@", resolve("src"))
   },
   pages: {
     index: {
-      entry: "examples/main.js",
+      entry: "src/main.js",
       template: "public/index.html",
       filename: "index.html"
     }
